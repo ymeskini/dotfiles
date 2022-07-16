@@ -17,10 +17,6 @@ source "${ZSH}/oh-my-zsh.sh"
 unalias rm # No interactive rm by default (brought by plugins/common-aliases)
 unalias lt # we need `lt` for https://github.com/localtunnel/localtunnel
 
-# Load rbenv if installed (to manage your Ruby versions)
-export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
-type -a rbenv > /dev/null && eval "$(rbenv init -)"
-
 # Load pyenv (to manage your Python versions)
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 type -a pyenv > /dev/null && eval "$(pyenv init -)" && eval "$(pyenv virtualenv-init -)" && RPROMPT+='[🐍 $(pyenv version-name)]'
@@ -67,6 +63,3 @@ export LC_ALL=en_US.UTF-8
 
 export BUNDLER_EDITOR=code
 export EDITOR=code
-
-# Set ipdb as the default Python debugger
-export PYTHONBREAKPOINT=ipdb.set_trace
