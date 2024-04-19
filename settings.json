@@ -8,7 +8,11 @@
     "editor.renderControlCharacters": true,
     "editor.showFoldingControls": "always",
     "editor.snippetSuggestions": "top",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
     "editor.tabSize": 2,
+    "window.zoomLevel": 2,
     "emmet.showSuggestionsAsSnippets": true,
     "emmet.triggerExpansionOnTab": true,
     "explorer.confirmDelete": false,
@@ -55,5 +59,9 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.panel.defaultLocation": "right",
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Night Owl"
+    "workbench.colorTheme": "Night Owl",
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "extensions.ignoreRecommendations": true
 }

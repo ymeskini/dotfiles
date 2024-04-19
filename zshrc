@@ -59,3 +59,12 @@ export LC_ALL=en_US.UTF-8
 
 export BUNDLER_EDITOR=code
 export EDITOR=code
+
+# Load rbenv if installed (to manage your Ruby versions)
+export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
+type -a rbenv > /dev/null && eval "$(rbenv init -)"
+
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
