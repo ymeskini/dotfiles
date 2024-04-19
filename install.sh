@@ -61,15 +61,6 @@ for name in settings.json keybindings.json; do
   symlink $PWD/$name $target
 done
 
-# Symlink SSH config file to the present `config` file for macOS and add SSH passphrase to the keychain
-if [[ `uname` =~ "Darwin" ]]; then
-  target=~/.ssh/config
-  backup $target
-  symlink $PWD/config $target
-  ssh-add -K ~/.ssh/id_ed25519
-fi
 
 # Refresh the current terminal with the newly installed configuration
 exec zsh
-
-echo "👌 Carry on with git setup!"
