@@ -28,11 +28,7 @@
         "**/.DS_Store": true,
         "**/.egg-info": true,
         "**/.git": true,
-        "build": true,
-        "coverage": true,
-        "dist": true,
         "log": true,
-        "node_modules": true,
         "public/packs": true,
         "tmp": true
     },
