@@ -48,6 +48,7 @@
 
 [init]
   defaultBranch = master
+
 [user]
 	email = youss.meskini@gmail.com
 	name = Youssef Meskini

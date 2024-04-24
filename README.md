@@ -9,4 +9,6 @@ To restart zsh session
 exec zsh
 ```
 
+Github setup is done with `gh` command line not with ssh
+
 Everything here is symlinked to the local configurations
